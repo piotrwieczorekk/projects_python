@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scandinavian Blog</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <style>
+            p {
+            text-align: justify;
+            }
+
+            .image-container {
+            width: 100%; /* Ensures the container takes up the full width of its parent */
+            }
+            .container {
+            transform: scale(1);  /* 80% of the original size */
+            transform-origin: top center; /* The point around which it scales - top center in this case */
+            width: 75%;  /* Compensate for the scaling. Since we're scaling down, we increase width */
+            margin-left: auto;
+            margin-right: auto;
+            }
+            .image-container img.img-fluid {
+            width: 100%; /* Makes the image fit the width of its container */
+            height: 700px; /* Maintains the image's aspect ratio */
+            }
+</style>
+        </style>
+    </head>
+    <body>
+    <div class="container">
+        <h1 class="text-center mt-2 mb-4">My Blog About Scandinavian Countries</h1>
+        <div class="image-container">
+            <img class="img-fluid mt-2 mb-4" src="{{ url_for('static', filename='mountain.jpg') }}" alt="mountain">
+            <div id="personal-info">
+                <h2 class="text-center mt-2 mb-4">About me</h2>
+                <p class="lead">
+                    Traveling and climbing have always been two intertwined passions that ignite my spirit and fuel my sense of adventure. Exploring new places and conquering towering peaks have become an integral part of who I am.
+
+The allure of travel, for me, lies in the thrill of the unknown. It's about setting foot in uncharted territories, immersing myself in different cultures, and discovering the world's hidden gems. From bustling cityscapes to serene natural landscapes, each destination holds a unique charm that I find irresistible. Whether it's strolling through cobblestone streets in a European city, savoring street food in Asia, or hiking through lush rainforests in South America, every journey unfolds a new chapter in my life.
+
+Yet, there's one aspect of my travels that stands out above all: my passion for climbing. It's not just about scaling peaks; it's a way of life. The mountains, with their majestic beauty and daunting challenges, have a magnetic pull that I can't resist. The moment I strap on my climbing gear and set my sights on a towering summit, I feel a rush of excitement that's hard to put into words.
+
+Climbing isn't just a physical endeavor; it's a mental and emotional challenge as well. It pushes me beyond my limits, teaching me perseverance, patience, and the importance of teamwork. Whether I'm navigating steep rock faces or navigating treacherous ice formations, each climb is a test of my skills and determination.
+
+One of the most magical aspects of climbing is the profound connection it fosters with nature. As I ascend higher and higher, I become acutely aware of the raw beauty that surrounds me—the crisp mountain air, the echoing calls of alpine birds, and the breathtaking vistas that stretch as far as the eye can see. It's a reminder of how small we are in the grand scheme of things and how awe-inspiring the world can be.
+
+In my travels, I've been fortunate to explore some of the world's most iconic climbing destinations, from the rugged peaks of the Himalayas to the towering spires of Patagonia. Each expedition leaves me with unforgettable memories and a longing for more.
+
+So, whether I'm trekking through remote villages in Nepal or bouldering in the heart of Yosemite Valley, my love for travel and climbing continues to shape my life, providing me with the kind of fulfillment that can only be found in the pursuit of one's true passions. These twin passions have taken me to places I've only dreamt of, and I eagerly anticipate the new adventures and heights they'll lead me to in the future.
+                </p>
+            </div>
+        </div>
+        <div id="other-countries">
+            <h2 class="available-countries mt-2 mb-4">Countries available on my blog:</h2>
+            <div id="sweden">
+                <h3 class="sweden-title mt-2 mb-4"><a href="{{ url_for('sweden') }}">Sweden</a></h3>
+            </div>
+            <div id="denmark">
+                <h3 class="denmark-title mt-2 mb-4"><a href="{{ url_for('denmark') }}">Denmark</a></h3>
+            </div>
+            <div id="norway">
+                <h3 class="norway-title mt-2 mb-4"><a href="{{ url_for('norway') }}">Norway</a></h3>
+            </div>
+        </div>
+        <div class="contact mt-2">
+            <h2 class="contact">Contact</h2>
+            <a href="mailto:przykladowymail@gmail.com?subject=Question about the blog" type="button" class="btn btn-primary btn-lg mt-2">Write me a message</a>
+        </div>
+    </div>
+    </body>
+</html>

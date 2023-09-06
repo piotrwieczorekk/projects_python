@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Norway</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <style>
+            p {
+            text-align: justify;
+            }
+            .image-container {
+            width: 100%; /* Ensures the container takes up the full width of its parent */
+            }
+
+            .container {
+            transform: scale(1);  /* 80% of the original size */
+            transform-origin: top center; /* The point around which it scales - top center in this case */
+            width: 75%;  /* Compensate for the scaling. Since we're scaling down, we increase width */
+            margin-left: auto;
+            margin-right: auto;
+            }
+            .image-container img.img-fluid {
+            width: 100%; /* Makes the image fit the width of its container */
+            height: 700px; /* Maintains the image's aspect ratio */
+            }
+        </style>
+    </head>
+    <body>
+    <div class="container">
+        <h1 class="text-center mt-2 mb-4">About Norway</h2>
+        <div id="country">
+            <div class="image-container">
+                <img class="img-fluid mt-2 mb-4" src="{{ url_for('static', filename='norwayflag.jpg') }}" alt="norwegianflag">
+                <div id="country-info">
+                    <p class="lead">
+                Norway (Norwegian: Norge), formally the Kingdom of Norway,[a] is a Nordic country in Northern Europe, the mainland territory of which comprises the western and northernmost portion of the Scandinavian Peninsula. The remote Arctic island of Jan Mayen and the archipelago of Svalbard also form part of Norway.[note 5] Bouvet Island, located in the Subantarctic, is a dependency; Norway also claims the Antarctic territories of Peter I Island and Queen Maud Land. The capital and largest city in Norway is Oslo.
+
+                Norway has a total area of 385,207 square kilometres (148,729 sq mi)[12] and had a population of 5,488,984 in January 2023.[14] The country shares a long eastern border with Sweden. It is bordered by Finland and Russia to the northeast and the Skagerrak strait to the south. Norway has an extensive coastline facing the North Atlantic Ocean and the Barents Sea. Harald V of the House of Glücksburg is the current King. Jonas Gahr Støre has been Prime Minister since 2021. As a unitary state with a constitutional monarchy, Norway divides state power between the parliament, the cabinet, and the supreme court, as determined by the 1814 constitution. The kingdom was established in 872 as a merger of petty kingdoms and has existed continuously for 1150–151 years. From 1537 to 1814, Norway was part of Denmark–Norway, and, from 1814 to 1905, it was in a personal union with Sweden. Norway was neutral during the First World War, and in the Second World War until April 1940 when it was invaded and occupied by Nazi Germany until the end of the war.
+            
+                Norway has both administrative and political subdivisions on two levels: counties and municipalities. The Sámi people have a certain amount of self-determination and influence over traditional territories through the Sámi Parliament and the Finnmark Act. Norway maintains close ties with the European Union and the United States. Norway is a founding member of the United Nations, NATO, the European Free Trade Association, the Council of Europe, the Antarctic Treaty, and the Nordic Council; a member of the European Economic Area, the WTO, and the OECD; and a part of the Schengen Area. The Norwegian languages share mutual intelligibility with Danish and Swedish.
+            
+                Norway maintains the Nordic welfare model with universal health care and a comprehensive social security system, and its values are rooted in egalitarian ideals.[20] The Norwegian state has large ownership positions in key industrial sectors, having extensive reserves of petroleum, natural gas, minerals, lumber, seafood, and fresh water. The petroleum industry accounts for around a quarter of the country's gross domestic product (GDP).[21] On a per-capita basis, Norway is the world's largest producer of oil and natural gas outside of the Middle East.[22][23] The country has the fourth-highest per-capita income in the world on the World Bank and IMF lists.[24] It has the world's largest sovereign wealth fund, with a value of US$1.3 trillion.[25][26]
+                    </p>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-center mt-2 mb-4">Norwegian Cities</h2>
+        <h3 class="text-center mt-2 mb-4">1. Bergen</h3>
+        <div class="cities">
+            <div class="image-container">
+                <img class="img-fluid mt-2 mb-4" src="{{ url_for('static', filename='bergen.jpg') }}" alt="Bergen">
+                <div class="city-info">
+                    <p class="lead">
+                        Bergen (Norwegian pronunciation: [ˈbæ̀rɡn̩] i), historically Bjørgvin, is a city and municipality in Vestland county on the west coast of Norway. As of 2021, its population is roughly 285,900.[2] Bergen is the second-largest city in Norway after national capital Oslo. The municipality covers 465 square kilometres (180 sq mi) and is on the peninsula of Bergenshalvøyen. The city centre and northern neighbourhoods are on Byfjorden, 'the city fjord', and the city is surrounded by mountains; Bergen is known as the "city of seven mountains". Many of the extra-municipal suburbs are on islands. Bergen is the administrative centre of Vestland county. The city consists of eight boroughs: Arna, Bergenhus, Fana, Fyllingsdalen, Laksevåg, Ytrebygda, Årstad, and Åsane.
+
+                        Trading in Bergen may have started as early as the 1020s. According to tradition, the city was founded in 1070 by King Olav Kyrre and was named Bjørgvin, 'the green meadow among the mountains'. It served as Norway's capital in the 13th century, and from the end of the 13th century became a bureau city of the Hanseatic League. Until 1789, Bergen enjoyed exclusive rights to mediate trade between Northern Norway and abroad and it was the largest city in Norway until the 1830s when it was overtaken by the capital, Christiania (now known as Oslo). What remains of the quays, Bryggen, is a World Heritage Site. The city was hit by numerous fires over the years. The Bergen School of Meteorology was developed at the Geophysical Institute starting in 1917, the Norwegian School of Economics was founded in 1936, and the University of Bergen in 1946. From 1831 to 1972, Bergen was its own county. In 1972 the municipality absorbed four surrounding municipalities and became a part of Hordaland county.
+                        
+                        The city is an international center for aquaculture, shipping, the offshore petroleum industry and subsea technology, and a national centre for higher education, media, tourism and finance. Bergen Port is Norway's busiest in terms of both freight and passengers, with over 300 cruise ship calls a year bringing nearly a half a million passengers to Bergen,[3] a number that has doubled in 10 years.[4] Almost half of the passengers are German or British.[4] The city's main football team is SK Brann and a unique tradition of the city is the buekorps. Natives speak a distinct dialect, known as Bergensk. The city features Bergen Airport, Flesland and Bergen Light Rail, and is the terminus of the Bergen Line. Four large bridges connect Bergen to its suburban municipalities. 
+                    </p>
+                </div>
+            </div>
+            <h3 class="text-center mt-2 mb-4">2. Oslo</h3>
+            <div class="image-container">
+                <img class="img-fluid mt-2 mb-4" src="{{ url_for('static', filename='oslo.jpg') }}" alt="Oslo">
+                <div class="city-info">
+                    <p class="lead">Oslo (/ˈɒzloʊ/ OZ-loh, US also /ˈɒsloʊ/ OSS-loh,[11][12] Norwegian: [ˈʊ̂ʂlʊ] i or [ˈʊ̂slʊ, ˈʊ̀ʂlʊ]; Southern Sami: Oslove[13]) is the capital and most populous city of Norway. It constitutes both a county and a municipality. The municipality of Oslo had a population of 709,037 in 2022, while the city's greater urban area had a population of 1,064,235 in 2022,[14] and the metropolitan area had an estimated population of 1,546,706 in 2021.
+                        During the Viking Age, the area was part of Viken. Oslo was founded as a city at the end of the Viking Age in 1040 under the name Ánslo, and established as a kaupstad or trading place in 1048 by Harald Hardrada. The city was elevated to a bishopric in 1070 and a capital under Haakon V of Norway around 1300. Personal unions with Denmark from 1397 to 1523 and again from 1536 to 1814 reduced its influence. After being destroyed by a fire in 1624, during the reign of King Christian IV, a new city was built closer to Akershus Fortress and named Christiania in honour of the king. It became a municipality (formannskapsdistrikt) on 1 January 1838. The city functioned as the capital of Norway during the 1814–1905 union between Sweden and Norway. From 1877, the city's name was spelled Kristiania in government usage, a spelling that was adopted by the municipal authorities in 1897. In 1925, the city, after incorporating the village retaining its former name, was renamed Oslo. In 1948 Oslo merged with Aker, a municipality which surrounded the capital and which was 27 times larger, thus creating the modern, much larger Oslo municipality.
+
+Oslo is the economic and governmental centre of Norway. The city is also a hub of Norwegian trade, banking, industry and shipping. It is an important centre for maritime industries and maritime trade in Europe. The city is home to many companies within the maritime sector, some of which are among the world's largest shipping companies, shipbrokers and maritime insurance brokers. Oslo is a pilot city of the Council of Europe and the European Commission intercultural cities programme.Oslo is considered a global city and was ranked "Beta World City" in studies carried out by the Globalization and World Cities Study Group and Network in 2008.[16] It was ranked number one in terms of quality of life among European large cities in the European Cities of the Future 2012 report by fDi magazine.[17] A survey conducted by ECA International in 2011 placed Oslo as the second most expensive city in the world for living expenses after Tokyo.[18] In 2013 Oslo tied with the Australian city of Melbourne as the fourth most expensive city in the world, according to the Economist Intelligence Unit (EIU)'s Worldwide Cost of Living study.[19] Oslo was ranked as the 24th most liveable city in the world by Monocle magazine.[20]
+
+Oslo's population was increasing at record rates during the early 2000s, making it the fastest growing major city in Europe at the time.[21] This growth stems for the most part from international immigration and related high birth rates, but also from intra-national migration. By 2010 the immigrant population in the city was growing somewhat faster than the Norwegian population,[22] and in the city proper this had become more than 25% of the total population if the children of immigrant parents are included.
+                    </p>
+                </div>
+            </div>
+            <h3 class="text-center mt-2 mb-4">3. Trondheim</h3>
+            <div class="image-container">
+                <img class="img-fluid mt-2 mb-4" src="{{ url_for('static', filename='trondheim.jpg') }}" alt="Trondheim">
+                <div class="city-info">
+                    <p class="lead">Trondheim (UK: /ˈtrɒn(d)haɪm/ TRON(D)-hyme, US: /ˈtrɒnheɪm/ TRON-haym,[5][6] Urban East Norwegian: [ˈtrɔ̂nː(h)æɪm] i; Southern Sami: Tråante), historically Kaupangen, Nidaros and Trondhjem (local pronunciation: [ˈtrɔ̂nːjæm]), is a city and municipality in Trøndelag county, Norway. As of 2020, it had a population of 205,332,[7] was the third most populous municipality in Norway, and was the fourth largest urban area. Trondheim lies on the south shore of Trondheim Fjord at the mouth of the River Nidelva. Among the significant technology-oriented institutions headquartered in Trondheim are the Norwegian University of Science and Technology (NTNU), the Foundation for Scientific and Industrial Research (SINTEF), the Geological Survey of Norway (NGU), and St. Olavs University Hospital.
+
+                        The settlement was founded in 997 as a trading post and served as the capital of Norway from the Viking Age until 1217. From 1152 to 1537, the city was the seat of the Catholic Archdiocese of Nidaros; it then became, and has remained, the seat of the Lutheran Diocese of Nidaros and the site of the Nidaros Cathedral. It was incorporated in 1838. The current municipality was formed in 1964, when Trondheim merged with Byneset, Leinstrand, Strinda, and Tiller, and further expanded on 1 January 2020, when Trondheim merged with Klæbu.
+                        
+                        Trondheim has a mild climate for its northerly latitude, resulting in moderate summers and winters that often remain above the freezing point in seaside areas. At higher elevations, though, the microclimate is colder and snowier.
+                        
+                        The city functions as the seat of the County Mayor of Trøndelag county but not as its administrative centre (which is Steinkjer). This is designed to avoid making the county administration too centralized.
+                        
+                        Trondheim is home to football club Rosenborg, Norway's most successful team, and Granåsen Ski Centre, which has hosted the World Championship in Nordic Skiing.</p>
+                </div>
+            </div>
+        </div>
+        <div id="other-countries">
+            <h2 class="available-countries mt-2 mb-4">Other countries available on my blog:</h2>
+            <div id="sweden">
+                <h3 class="sweden-title mt-2 mb-4"><a href="{{ url_for('sweden') }}">Sweden</a></h3>
+            </div>
+            <div id="denmark">
+                <h3 class="denmark-title mt-2 mb-4"><a href="{{ url_for('denmark') }}">Denmark</a></h3>
+            </div>
+        </div>
+        <div class="contact mt-2">
+            <h2 class="contact">Contact</h2>
+            <a href="mailto:przykladowymail@gmail.com?subject=Question about the blog" type="button" class="btn btn-primary btn-lg mt-2">Write me a message</a>
+        </div>
+    </div>
+    </body>
+</html>
